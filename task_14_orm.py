@@ -7,7 +7,7 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import asyncio
 from crud_functions import *
 
-api = "7408876155:AAGNj2PqBmRAln8EPPRZ96R2Ks_Jlxq0MVI"
+api = "..."
 bot = Bot(token=api)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
@@ -39,7 +39,7 @@ class RegistrationState(StatesGroup):
     username = State()
     email = State()
     age = State()
-    balance = State()
+    balance = State()  
 
 
 @dp.message_handler(text="Регистрация")
